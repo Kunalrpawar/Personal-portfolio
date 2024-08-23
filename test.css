@@ -1,0 +1,93 @@
+/* Ensure proper spacing and alignment for the testimonials section */
+.s-testimonials {
+    padding: 40px 0; /* Adjust padding as needed */
+    background-color: #f7eef5; /* Light background color for contrast */
+}
+
+
+
+.s-testimonials__header h3 {
+    font-size: 4.5rem !important; /* Use !important if necessary to override other styles */
+}
+
+
+
+/* Center the header text */
+.s-testimonials__header h3 {
+    font-size: 2rem; /* Adjust font size for the section header */
+    color: #333; /* Darker text color for readability */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Styling for the swiper container */
+.swiper-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+/* Style for each slide */
+.testimonials__slide {
+    padding: 20px;
+    border: 1px solid #ddd; /* Light border around each slide */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f5f0f4; /* White background for each slide */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 0 auto; /* Center slides */
+}
+
+/* Styling for the author section within each slide */
+.testimonials__author {
+    display: flex;
+    align-items: center;
+    margin-top: 15px; /* Space above the author section */
+}
+
+.testimonials__avatar {
+    border-radius: 50%;
+    width: 50px; /* Size of the avatar */
+    height: 50px; /* Size of the avatar */
+    margin-right: 10px; /* Space between avatar and text */
+}
+
+.testimonials__cite {
+    font-size: 0.9rem; /* Smaller font size for author info */
+    color: #666; /* Lighter text color */
+}
+
+/* Pagination styling */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px; /* Position at the bottom of the slider */
+    text-align: center;
+    width: 100%;
+}
+
+.swiper-pagination-bullet {
+    background: #c225a2; /* Bullet color */
+    opacity: 0.7; /* Slight transparency */
+}
+
+.swiper-pagination-bullet-active {
+    background: #0056b3; /* Active bullet color */
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .s-testimonials__header h3 {
+        font-size: 1.5rem; /* Adjust font size on smaller screens */
+    }
+
+    .testimonials__slide {
+        padding: 15px; /* Less padding on smaller screens */
+    }
+
+    .testimonials__author {
+        flex-direction: column; /* Stack avatar and text vertically on small screens */
+        align-items: flex-start;
+    }
+
+    .testimonials__avatar {
+        margin-bottom: 10px; /* Space below the avatar */
+    }
+}

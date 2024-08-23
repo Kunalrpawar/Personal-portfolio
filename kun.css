@@ -1,0 +1,32 @@
+.education-address-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px; /* Adjust the space between the sections */
+}
+
+.education-section,
+.address-section {
+    flex: 1;
+    min-width: 0; /* Prevents shrinking */
+}
+
+.education-section {
+    margin-right: 120px; /* Space between the Education and Address sections */
+}
+
+ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+li {
+    margin-bottom: 10px; /* Add space between list items */
+}
+
+/* Optional: Add some padding and border to see the sections better */
+.education-section,
+.address-section {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
